@@ -14,13 +14,6 @@
             width: 256px;
             height: 23px;
         }
-        .auto-style3 {
-            width: 269px;
-            height: 23px;
-        }
-        .auto-style4 {
-            height: 23px;
-        }
         .auto-style5 {
             font-size: xx-large;
         }
@@ -29,6 +22,13 @@
         }
         .auto-style7 {
             width: 125px;
+        }
+        .auto-style8 {
+            width: 125px;
+            height: 23px;
+        }
+        .auto-style9 {
+            height: 23px;
         }
     </style>
 </head>
@@ -39,15 +39,15 @@
                 <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:HyperLink ID="hplAgregarSucursales" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
-                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:HyperLink ID="hplListadoSucursales" runat="server" NavigateUrl="~/ListarSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                 </td>
-                <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hplEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hplEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             </tr>
         </table>
     <p class="auto-style5">
-        <strong>GRUPO N°</strong></p>
+        <strong>GRUPO N°8</strong></p>
     <p class="auto-style6">
         <strong>Agregar Sucursal</strong></p>
     <table class="auto-style1">
@@ -59,9 +59,19 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style7">&nbsp;</td>
+            <td class="auto-style7">Descripción:</td>
+            <td>
+                <asp:TextBox ID="txtDescripción" runat="server"></asp:TextBox>
+            </td>
             <td>&nbsp;</td>
-            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style8">Provincia:</td>
+            <td class="auto-style9">
+                <asp:DropDownList ID="ddlProvincia" runat="server">
+                </asp:DropDownList>
+            </td>
+            <td class="auto-style9"></td>
         </tr>
         <tr>
             <td class="auto-style7">&nbsp;</td>
@@ -70,12 +80,9 @@
         </tr>
         <tr>
             <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" />
+            </td>
             <td>&nbsp;</td>
         </tr>
     </table>

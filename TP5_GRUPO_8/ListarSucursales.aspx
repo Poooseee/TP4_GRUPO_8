@@ -14,13 +14,6 @@
             width: 256px;
             height: 23px;
         }
-        .auto-style3 {
-            width: 269px;
-            height: 23px;
-        }
-        .auto-style4 {
-            height: 23px;
-        }
         .auto-style5 {
             font-size: x-large;
         }
@@ -44,16 +37,16 @@
                 <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:HyperLink ID="hplAgregarSucursales" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
-                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:HyperLink ID="hplListadoSucursales" runat="server" NavigateUrl="~/ListarSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                 </td>
-                <td class="auto-style4">&nbsp;&nbsp;<asp:HyperLink ID="hplEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                <td class="auto-style2">&nbsp;&nbsp;<asp:HyperLink ID="hplEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
             </tr>
         </table>
         <div class="auto-style5">
@@ -67,11 +60,15 @@
                     </td>
                     <td class="auto-style8">
                         <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                    &nbsp;&nbsp;
+                        <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
+        <asp:GridView ID="grvSucursales" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>

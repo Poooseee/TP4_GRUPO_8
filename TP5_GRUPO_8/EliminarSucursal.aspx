@@ -14,13 +14,6 @@
             width: 256px;
             height: 23px;
         }
-        .auto-style3 {
-            width: 269px;
-            height: 23px;
-        }
-        .auto-style4 {
-            height: 23px;
-        }
         .auto-style5 {
             font-size: x-large;
         }
@@ -36,10 +29,10 @@
                 <td class="auto-style2">&nbsp;<asp:HyperLink ID="hplAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">AgregarSucursal</asp:HyperLink>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
-                <td class="auto-style3">&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hplListarSucursal" runat="server" NavigateUrl="~/ListarSucursales.aspx">Listado de sucursales</asp:HyperLink>
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hplListarSucursal" runat="server" NavigateUrl="~/ListarSucursales.aspx">Listado de sucursales</asp:HyperLink>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
-                <td class="auto-style4">&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hplEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">EliminarSucursal</asp:HyperLink>
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="hplEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">EliminarSucursal</asp:HyperLink>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             </tr>
         </table>
@@ -50,7 +43,11 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style6">Ingresar ID Sucursal:</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:TextBox ID="txtIdSucursal" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
