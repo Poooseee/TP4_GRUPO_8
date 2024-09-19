@@ -24,30 +24,48 @@ namespace TP5_GRUPO_8
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control hplAgregarSucursales.
+        /// Control hplAgregarSucursal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplAgregarSucursales;
+        protected global::System.Web.UI.WebControls.HyperLink hplAgregarSucursal;
 
         /// <summary>
-        /// Control hplListarSucursales.
+        /// Control hplListarSucursal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplListarSucursales;
+        protected global::System.Web.UI.WebControls.HyperLink hplListarSucursal;
 
         /// <summary>
-        /// Control hplEliminarSucursales.
+        /// Control hplEliminarSucursal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplEliminarSucursales;
+        protected global::System.Web.UI.WebControls.HyperLink hplEliminarSucursal;
+
+        /// <summary>
+        /// Control txtIdSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIdSucursal;
+
+        /// <summary>
+        /// Control btnEliminar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
     }
 }
