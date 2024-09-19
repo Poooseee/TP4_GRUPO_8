@@ -74,14 +74,16 @@
             <td class="auto-style9"></td>
         </tr>
         <tr>
-            <td class="auto-style7">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style7">Direccion:</td>
+            <td>
+                <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
+            </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style7">&nbsp;</td>
             <td>
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" />
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>

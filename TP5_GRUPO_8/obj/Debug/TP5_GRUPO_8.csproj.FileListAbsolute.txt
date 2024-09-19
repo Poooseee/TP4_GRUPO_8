@@ -175,3 +175,7 @@ C:\Users\agust\Documents\GitHub\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.cs
 C:\Users\agust\Documents\GitHub\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUP.9C26D5EA.Up2Date
 C:\Users\agust\Documents\GitHub\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.dll
 C:\Users\agust\Documents\GitHub\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.pdb
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.csproj.AssemblyReference.cache
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.csproj.CoreCompileInputs.cache
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.dll
+C:\Users\Fede\Desktop\Nueva carpeta (3)\TP5_GRUPO_8\TP5_GRUPO_8\obj\Debug\TP5_GRUPO_8.pdb
