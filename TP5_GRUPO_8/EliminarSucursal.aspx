@@ -21,6 +21,12 @@
         .auto-style4 {
             height: 23px;
         }
+        .auto-style5 {
+            font-size: x-large;
+        }
+        .auto-style6 {
+            width: 148px;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +44,16 @@
             </tr>
         </table>
         <div>
+            <br />
+        <strong class="auto-style5">Eliminar Sucursal<br />
+            </strong>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style6">Ingresar ID Sucursal:</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>

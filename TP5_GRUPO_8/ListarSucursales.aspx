@@ -28,6 +28,12 @@
             font-size: medium;
             width: 222px;
         }
+        .auto-style7 {
+            width: 304px;
+        }
+        .auto-style8 {
+            width: 306px;
+        }
     </style>
 </head>
 <body>
@@ -56,8 +62,12 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style6">Busqueda ingrese Id sucursal:</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="txtIdSucursal" runat="server" Width="236px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
             </table>

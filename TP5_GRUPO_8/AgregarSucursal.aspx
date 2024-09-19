@@ -27,6 +27,9 @@
         .auto-style6 {
             font-size: x-large;
         }
+        .auto-style7 {
+            width: 125px;
+        }
     </style>
 </head>
 <body>
@@ -43,37 +46,39 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             </tr>
         </table>
-    </form>
     <p class="auto-style5">
         <strong>GRUPO N°</strong></p>
     <p class="auto-style6">
         <strong>Agregar Sucursal</strong></p>
     <table class="auto-style1">
         <tr>
+            <td class="auto-style7">Nombre Sucursal:</td>
+            <td>
+                <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
+            </td>
             <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
     </table>
-</body>
+    </form>
+    </body>
 </html>
