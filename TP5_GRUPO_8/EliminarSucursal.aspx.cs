@@ -10,7 +10,7 @@ namespace TP5_GRUPO_8
 {
     public partial class EliminarSucursal : System.Web.UI.Page
     {
-        ConexionDB conexion = new ConexionDB();
+        Consulta consulta = new Consulta();
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -20,9 +20,7 @@ namespace TP5_GRUPO_8
         {
             if(txtIdSucursal.Text.Trim().Length > 0)
             {
-                string consulta = "delete from Sucursal where Id_Sucursal = " + Convert.ToInt32(txtIdSucursal.Text);
-
-
+                int filasAfectadas = consulta.EliminarSucursal(Convert.ToInt32(txtIdSucursal.Text));
             }
         }
     }

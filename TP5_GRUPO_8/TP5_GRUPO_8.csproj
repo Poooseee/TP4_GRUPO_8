@@ -82,6 +82,7 @@
       <DependentUpon>AgregarSucursal.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConexionDB.cs" />
+    <Compile Include="Consulta.cs" />
     <Compile Include="EliminarSucursal.aspx.cs">
       <DependentUpon>EliminarSucursal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
