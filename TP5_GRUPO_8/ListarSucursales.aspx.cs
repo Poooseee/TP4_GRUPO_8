@@ -34,5 +34,13 @@ namespace TP5_GRUPO_8
           //  grvSucursales.DataSource = sucursales;
             grvSucursales.DataBind();
         }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            if(txtIdSucursal.Text.Trim().Length > 0) {
+            {
+                    //Funcionamiento de Filtro
+            }
+        }
     }
 }

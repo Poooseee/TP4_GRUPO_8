@@ -33,7 +33,10 @@ namespace TP5_GRUPO_8
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            
+            if (txtNombreSucursal.Text.Length > 0 && txtDireccion.Text.Length > 0 && txtDescripción.Text.Length > 0)
+            {
+                //Funcion del boton guardar
+            }
         }
     }
 }
