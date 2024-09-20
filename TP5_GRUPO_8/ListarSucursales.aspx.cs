@@ -37,7 +37,7 @@ namespace TP5_GRUPO_8
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            if(txtIdSucursal.Text.Trim().Length > 0) {
+            if(txtIdSucursal.Text.Trim().Length > 0)
             {
                     //Funcionamiento de Filtro
             }

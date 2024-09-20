@@ -16,6 +16,12 @@ namespace TP5_GRUPO_8
             string nombreTabla = "Provincias";
             return conexion.ObtenerTablas(consultaProvincias, nombreTabla);
         }
+        public int AgregarSucursal(string NombreSucursal, string DescripcionSucursal, int IdProvinciaSucursal, string DireccionSucursal)
+        {
+
+            string consultaAgregarSucursal = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
+                                             "VALUES ()";
+        }
 
         public DataTable obtenerSucursales()
         {

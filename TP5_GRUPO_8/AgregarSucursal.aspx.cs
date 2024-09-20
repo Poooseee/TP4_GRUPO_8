@@ -29,14 +29,14 @@ namespace TP5_GRUPO_8
             ddlProvincia.DataTextField = "DescripcionProvincia";
             ddlProvincia.DataValueField = "Id_Provincia";
             ddlProvincia.DataBind();
+
+            ddlProvincia.Items.Insert(0, "--Seleccionar--");
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtNombreSucursal.Text.Length > 0 && txtDireccion.Text.Length > 0 && txtDescripción.Text.Length > 0)
-            {
-                //Funcion del boton guardar
-            }
+            int IdProvincia = int.Parse(ddlProvincia.SelectedValue);
+            consulta.AgregarSucursal(txtNombreSucursal.Text, txtDescripción.Text, IdProvincia, txtDireccion.Text);
         }
     }
 }

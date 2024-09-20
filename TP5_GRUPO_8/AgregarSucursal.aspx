@@ -31,11 +31,11 @@
             height: 23px;
         }
         .auto-style10 {
-            width: 945px;
+            width: 146px;
         }
         .auto-style11 {
+            width: 146px;
             height: 23px;
-            width: 945px;
         }
     </style>
 </head>
@@ -82,7 +82,9 @@
                 <asp:DropDownList ID="ddlProvincia" runat="server">
                 </asp:DropDownList>
             </td>
-            <td class="auto-style9"></td>
+            <td class="auto-style9">
+                <asp:RequiredFieldValidator ID="rfvDdlProvincias" runat="server" ControlToValidate="ddlProvincia">*</asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style7">Direccion:</td>
