@@ -20,7 +20,7 @@ namespace TP5_GRUPO_8
         {
             if(txtIdSucursal.Text.Trim().Length > 0)
             {
-                int filasAfectadas = consulta.EliminarSucursal(Convert.ToInt32(txtIdSucursal.Text));
+                
             }
         }
     }
