@@ -13,13 +13,19 @@ namespace TP5_GRUPO_8
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-           // DataTable ObtenerSucursales()
-          //  {
+            string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal";
+            string nombre_tabla = "grvSucursales";
+            ConexionDB conexion = new ConexionDB();
+            DataTable sucursales = conexion.ObtenerTablas(consulta, "Sucursales");
+            grvSucursales.DataSource = sucursales;
+            grvSucursales.DataBind();
+
+            // DataTable ObtenerSucursales()
+            //  {
             //    string consultaSQL = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal";
-           //     string nombreTabla = "Sucursales";
+            //     string nombreTabla = "Sucursales";
             //    return conexion.ObtenerTablas(consultaSQL, nombreTabla);
-//}
+            //}
         }
     }
 }
