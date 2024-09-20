@@ -20,7 +20,8 @@ namespace TP5_GRUPO_8
         {
             if(txtIdSucursal.Text.Trim().Length > 0)
             {
-                
+                string idSucursal = (txtIdSucursal.Text);
+                consulta.EliminarSucursal(idSucursal);
             }
         }
     }

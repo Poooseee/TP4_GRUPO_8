@@ -26,7 +26,7 @@ namespace TP5_GRUPO_8
             SqlConnection conn = new SqlConnection(rutaDB);
             conn.Open();
             SqlCommand cmd = new SqlCommand(consultaSQL, conn);
-            int filas = (int)cmd.ExecuteNonQuery(); // PARA INSERT-UPDATE-DELETE
+            int filas = cmd.ExecuteNonQuery(); // PARA INSERT-UPDATE-DELETE
             conn.Close();
             return filas;
         }

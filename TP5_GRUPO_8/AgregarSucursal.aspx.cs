@@ -37,6 +37,11 @@ namespace TP5_GRUPO_8
         {
             int IdProvincia = int.Parse(ddlProvincia.SelectedValue);
             consulta.AgregarSucursal(txtNombreSucursal.Text, txtDescripción.Text, IdProvincia, txtDireccion.Text);
+            txtNombreSucursal.Text = "";
+            txtDescripción.Text = "";
+            ddlProvincia.SelectedIndex = 0;
+            txtDireccion.Text = "";
+
         }
     }
 }
