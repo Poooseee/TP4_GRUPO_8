@@ -45,6 +45,7 @@
                     <td class="auto-style6">Ingresar ID Sucursal:</td>
                     <td>
                         <asp:TextBox ID="txtIdSucursal" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:RequiredFieldValidator ID="rfvEliminarSucursal" runat="server" ControlToValidate="txtIdSucursal">*</asp:RequiredFieldValidator>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
                     </td>

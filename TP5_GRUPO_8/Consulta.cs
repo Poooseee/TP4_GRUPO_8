@@ -21,6 +21,7 @@ namespace TP5_GRUPO_8
 
             string consultaAgregarSucursal = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) " +
                                              "VALUES ()";
+            return 1;//completar
         }
 
         public DataTable obtenerSucursales()
@@ -34,6 +35,16 @@ namespace TP5_GRUPO_8
             string consulta = "delete from Sucursal where Id_Sucursal = " + id;
             return conexion.EjecutarConsulta(consulta);
         }
-        
+
+        public DataTable BuscarSucursalesPorId(int idSucursal)
+        {
+            string consulta = "SELECT Id_Sucursal AS ID, NombreSucursal AS NOMBRE," +
+                "DescripcionSucursal AS DESCRIPCION, DescripcionProvincia AS PROVINCIA, DireccionSucursal AS DIRECCIÓN FROM Sucursal INNER JOIN Provincia ON Id_Provincia=Id_ProvinciaSucursal" +
+                " WHERE ";
+            
+            string nombre_tabla = "grvSucursales";
+            return conexion.ObtenerTablas(consulta, nombre_tabla);
+        }
+
     }
 }

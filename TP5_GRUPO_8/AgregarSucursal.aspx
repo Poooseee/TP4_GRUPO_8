@@ -83,7 +83,7 @@
                 </asp:DropDownList>
             </td>
             <td class="auto-style9">
-                <asp:RequiredFieldValidator ID="rfvDdlProvincias" runat="server" ControlToValidate="ddlProvincia">*</asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvDdlProvincias" runat="server" ControlToValidate="ddlProvincia" InitialValue="--Seleccionar--">*</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
