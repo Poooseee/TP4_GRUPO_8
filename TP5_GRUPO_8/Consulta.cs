@@ -28,5 +28,6 @@ namespace TP5_GRUPO_8
             string consulta = "delete from Sucursal where Id_Sucursal = " + id;
             return conexion.EjecutarConsulta(consulta);
         }
+        
     }
 }
