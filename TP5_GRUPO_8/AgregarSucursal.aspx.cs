@@ -36,12 +36,21 @@ namespace TP5_GRUPO_8
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             int IdProvincia = int.Parse(ddlProvincia.SelectedValue);
-            consulta.AgregarSucursal(txtNombreSucursal.Text, txtDescripción.Text, IdProvincia, txtDireccion.Text);
+            int filasAfectadas = consulta.AgregarSucursal(txtNombreSucursal.Text, txtDescripción.Text, IdProvincia, txtDireccion.Text);
+
+            if(filasAfectadas > 0)
+            {
             txtNombreSucursal.Text = "";
             txtDescripción.Text = "";
             ddlProvincia.SelectedIndex = 0;
             txtDireccion.Text = "";
             lblAgregado.Text = "La sucursal se ha agregado con éxito";
+
+            }
+            else
+            {
+                lblAgregado.Text = "La sucursal no se agrego";
+            }
         }
     }
 }

@@ -19,13 +19,22 @@ namespace TP5_GRUPO_8
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtIdSucursal.Text.Trim().Length > 0)
-            {
                 string idSucursal = (txtIdSucursal.Text);
-                consulta.EliminarSucursal(idSucursal);
+          int filasAfectadas = consulta.EliminarSucursal(idSucursal);
+            
+            if(filasAfectadas > 0)
+            {
                 lblEliminado.Text = "La sucursal ha sido eliminada con éxito";
                 lblEliminado.ForeColor = Color.Red;
+                txtIdSucursal.Text=string.Empty;
+
             }
+            else { lblEliminado.Text = "No se pudo eliminar o el registro no existe";
+                lblEliminado.ForeColor = Color.Red;
+            }
+
+            
+            
         }
     }
 }
