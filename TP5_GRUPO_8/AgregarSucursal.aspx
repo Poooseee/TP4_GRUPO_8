@@ -100,7 +100,9 @@
             <td class="auto-style10">
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="lblAgregado" runat="server" Font-Bold="True"></asp:Label>
+            </td>
         </tr>
     </table>
     </form>

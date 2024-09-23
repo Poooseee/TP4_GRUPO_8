@@ -63,7 +63,9 @@
                     &nbsp;&nbsp;
                         <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" OnClick="btnMostrarTodos_Click" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Label ID="lblTodos" runat="server" Font-Bold="True" Text="Estas son todas las sucursales"></asp:Label>
+                    </td>
                 </tr>
             </table>
         </div>

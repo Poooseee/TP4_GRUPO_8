@@ -19,7 +19,6 @@ namespace TP5_GRUPO_8
             {
             grvSucursales.DataSource = consulta.obtenerSucursales();
             grvSucursales.DataBind();
-
             }
             
 
@@ -30,6 +29,7 @@ namespace TP5_GRUPO_8
         {
             grvSucursales.DataSource = consulta.obtenerSucursales();
             grvSucursales.DataBind();
+            lblTodos.Text = "Estas son todas las sucursales";
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
@@ -39,6 +39,7 @@ namespace TP5_GRUPO_8
                 grvSucursales.DataSource = consulta.BuscarSucursalesPorId(int.Parse(txtIdSucursal.Text));
                 grvSucursales.DataBind();
                 txtIdSucursal.Text = "";
+                lblTodos.Text = "";
             }
 
         }

@@ -41,7 +41,7 @@ namespace TP5_GRUPO_8
             txtDescripción.Text = "";
             ddlProvincia.SelectedIndex = 0;
             txtDireccion.Text = "";
-
+            lblAgregado.Text = "La sucursal se ha agregado con éxito";
         }
     }
 }

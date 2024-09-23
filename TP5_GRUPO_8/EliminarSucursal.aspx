@@ -20,6 +20,18 @@
         }
         .auto-style6 {
             width: 148px;
+            height: 48px;
+        }
+        .auto-style7 {
+            height: 48px;
+        }
+        .auto-style8 {
+            height: 48px;
+            width: 408px;
+        }
+        .auto-style9 {
+            height: 48px;
+            width: 247px;
         }
     </style>
 </head>
@@ -43,18 +55,25 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style6">Ingresar ID Sucursal:</td>
-                    <td>
+                    <td class="auto-style8">
                         <asp:TextBox ID="txtIdSucursal" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:RequiredFieldValidator ID="rfvEliminarSucursal" runat="server" ControlToValidate="txtIdSucursal">*</asp:RequiredFieldValidator>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
-                    <td>
+                    <td class="auto-style9">
+                        &nbsp;&nbsp;
+                    </td>
+                    <td class="auto-style7">
                         <asp:RegularExpressionValidator ID="revId_del" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="\d+">Ingrese un número</asp:RegularExpressionValidator>
                     </td>
                 </tr>
             </table>
         </div>
+        <p style="margin-left: 40px">
+            <asp:Label ID="lblEliminado" runat="server" Font-Bold="True"></asp:Label>
+        </p>
     </form>
 </body>
 </html>
